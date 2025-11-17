@@ -1,11 +1,97 @@
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+    background-color: #343a40;
+    font-family: 'Segment7', monospace;
+    color: #e9ecef;
+}
 
-*/
+h1 {
+    color: #f8f9fa !important;
+}
+
+.seconds-counter-display {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.digit-box {
+    background-color: #495057;
+    color: #00ff00;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 
+        inset 0 0 10px rgba(0, 255, 0, 0.5), 
+        0 5px 15px rgba(0, 0, 0, 0.4);
+    min-width: 90px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00aa00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.digit-box i {
+    font-size: 70px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.colon {
+    font-size: 80px;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.card {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+    border-color: #495057 !important;
+}
+
+.form-control {
+    background-color: #343a40 !important;
+    color: #00ff00 !important;
+    border-color: #00aa00 !important;
+    box-shadow: none !important;
+}
+
+.form-control::placeholder {
+    color: #888 !important;
+}
+
+.card .text-muted {
+    color: #ced4da !important;
+}
+
+@media (max-width: 768px) {
+    .digit-box {
+        font-size: 50px;
+        min-width: 60px;
+        height: 80px;
+        padding: 5px 10px;
+    }
+    .digit-box i {
+        font-size: 40px;
+    }
+    .colon {
+        font-size: 50px;
+    }
+}
+
+@font-face {
+    font-family: 'Segment7';
+    src: url('path/to/Segment7.ttf') format('truetype');
+}
